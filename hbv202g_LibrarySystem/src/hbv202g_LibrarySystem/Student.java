@@ -1,6 +1,6 @@
 package hbv202g_LibrarySystem;
 
-public class Student extends User {
+public class 	Student extends User {
 
 	private boolean feePaid;
 	

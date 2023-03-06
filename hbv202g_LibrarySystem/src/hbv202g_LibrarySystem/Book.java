@@ -1,5 +1,6 @@
 package hbv202g_LibrarySystem;
 
+// TODO imports
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,8 +10,8 @@ public class Book {
 	
 	private String title;
 
-	// TODO exception
-	public Book(List<Author> authors, String title) throws NotAtLeastOneAuthorProvided {
+	// TODO add contructor with exception
+	public Book(String title, List<Author> authors) throws NotAtLeastOneAuthorProvided {
 		super();
 		this.authors = authors;
 		this.title = title;
