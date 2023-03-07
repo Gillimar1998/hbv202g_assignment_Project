@@ -50,7 +50,7 @@
     <coordinates>
       <x>240</x>
       <y>550</y>
-      <w>380</w>
+      <w>370</w>
       <h>160</h>
     </coordinates>
     <panel_attributes>Book
@@ -206,15 +206,15 @@ m2=0..n</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>610</x>
+      <x>600</x>
       <y>590</y>
-      <w>100</w>
+      <w>110</w>
       <h>50</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m1=1
 book</panel_attributes>
-    <additional_attributes>10.0;20.0;80.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;90.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -441,10 +441,10 @@ date 30 days from now.
       <x>440</x>
       <y>160</y>
       <w>50</w>
-      <h>40</h>
+      <h>50</h>
     </coordinates>
     <panel_attributes>lt=.
 </panel_attributes>
-    <additional_attributes>10.0;20.0;30.0;20.0</additional_attributes>
+    <additional_attributes>10.0;30.0;30.0;20.0</additional_attributes>
   </element>
 </diagram>

@@ -20,7 +20,7 @@ public class Lending {
     public Lending(Book book, User user) {
         this.book = book;
         this.user = user;
-        this.dueDate = dueDate.plusDays(30);
+        this.dueDate = LocalDate.now().plusDays(30);
     }
 
     public Book getBook() {
