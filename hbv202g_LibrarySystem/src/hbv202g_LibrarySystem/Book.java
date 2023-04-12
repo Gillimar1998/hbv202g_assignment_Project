@@ -1,6 +1,5 @@
 package hbv202g_LibrarySystem;
 
-// TODO imports
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,14 +9,13 @@ public class Book {
 	
 	private String title;
 
-	// TODO add contructor with exception
+	// TODO throw exception if author list is empty
 	public Book(String title, List<Author> authors) throws NotAtLeastOneAuthorProvided {
 		super();
 		this.authors = authors;
 		this.title = title;
 	}
 
-	// TODO add
 	public void addAuthor(Author author) {
 		authors.add(author);
 	}
@@ -26,10 +24,10 @@ public class Book {
 		return authors;
 	}
 
-	public void setAuthors(List<Author> authors) {
+	// TODO throw exception if author list is empty
+	public void setAuthors(List<Author> authors) throws NotAtLeastOneAuthorProvided  {
 		this.authors = authors;
 	}
-	
 
 	public String getTitle() {
 		return title;

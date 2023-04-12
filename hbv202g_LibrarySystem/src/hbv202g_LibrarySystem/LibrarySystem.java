@@ -11,13 +11,13 @@ public class LibrarySystem {
 
     private List<Lending> lendings = new ArrayList<Lending>();
 
-    // TODO: initialise fields in constructor or field?
+    // (If fields are not initialised above, this would need to be done in the constructor or below.
     public LibrarySystem() {
         // TODO Auto-generated constructor stub
     }
 
 
-    // TODO Exception
+    // TODO Throw exception if list of authors is empty
     // Add book using title and author
     public void addBookWithTitleAndAuthorlist(String title, List<Author> authors) throws NotAtLeastOneAuthorProvided {
         books.add(new Book(title, authors));
@@ -60,14 +60,15 @@ public class LibrarySystem {
     }
 
     // extend a lending of a book of type Book for a user of type FacultyMember
-    public void extendLending(FacultyMember facultyMember, Book book, LocalDate newDueDate) throws NotAtLeastOneAuthorProvided {
+    // TODO Throw exception if list of user or book does not exist
+    public void extendLending(FacultyMember facultyMember, Book book, LocalDate newDueDate) throws UserOrBookDoesNotExistException {
 
     }
 
     // return a book from a user
+    // TODO Throw exception if list of user or book does not exist
     public void returnBook(User user, Book book) throws UserOrBookDoesNotExistException {
 
     }
-
 
 }

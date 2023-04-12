@@ -16,7 +16,6 @@ public class Lending {
 
     private LocalDate dueDate;
 
-    // TODO
     public Lending(Book book, User user) {
         this.book = book;
         this.user = user;
