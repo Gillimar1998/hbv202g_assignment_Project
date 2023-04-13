@@ -35,6 +35,7 @@ public class LibrarySystem {
     }
 
     // find book by title
+    // Note: the assignment did require to implement the body of this method
     public Book findBookByTitle(String title) {
         for (Book book : books) {
             if (book.getTitle().equals(title)) {
@@ -45,6 +46,7 @@ public class LibrarySystem {
     }
 
     // find user by name
+    // Note: the assignment did require to implement the body of this method
     public User findUserByName(String name) {
         for (User user : users) {
             if (user.getName().equals(name)) {
@@ -55,6 +57,8 @@ public class LibrarySystem {
     }
 
     // a user of type User can borrow a book of type Book
+    // TODO: We could introduce a further exception if it is tried to borrow a book that is currently already borrowed
+    // Note: the assignment did require to implement the body of this method
     public void borrowBook(User user, Book book) {
         lendings.add(new Lending(book, user));
     }
